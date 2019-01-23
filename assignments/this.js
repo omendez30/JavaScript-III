@@ -19,7 +19,14 @@
 // Principle 2
 
 // code example for Implicit Binding
-
+const person = {
+  name: "John",
+  age: 23,
+  sayHello: function() {
+    console.log(`Hello my name is ${this.name}`);
+  }
+};
+person.sayHello();
 // Principle 3
 
 // code example for New Binding
