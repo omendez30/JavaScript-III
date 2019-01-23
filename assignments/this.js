@@ -30,13 +30,13 @@ person.sayHello();
 // Principle 3
 
 // code example for New Binding
-let Animals = function(type, weight, name) {
-  this.type = type;
-  this.weight = weight;
-  this.name = name;
-};
+// let Animals = function(type, weight, name) {
+//   this.type = type;
+//   this.weight = weight;
+//   this.name = name;
+// };
 
-let liger = new Animals("lion/tiger hybrid", 200, "Leo");
+// let liger = new Animals("lion/tiger hybrid", 200, "Leo");
 // Principle 4
 
 // code example for Explicit Binding
@@ -45,4 +45,4 @@ let myAge = function() {
   console.log(`My age is ${this.age}`);
 };
 
-myAge.call(age);
+myAge.call(person);
