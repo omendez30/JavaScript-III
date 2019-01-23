@@ -40,3 +40,9 @@ let liger = new Animals("lion/tiger hybrid", 200, "Leo");
 // Principle 4
 
 // code example for Explicit Binding
+
+let myAge = function() {
+  console.log(`My age is ${this.age}`);
+};
+
+myAge.call(age);
