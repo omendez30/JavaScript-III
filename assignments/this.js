@@ -11,10 +11,10 @@
 
 // Principle 1
 
-// code example for Window Binding
-// function sayHello(name){
-//     console.log(this);
-// }
+//code example for Window Binding
+function sayHello(name) {
+  console.log(this);
+}
 
 // Principle 2
 
@@ -29,12 +29,12 @@ const person = {
 person.sayHello();
 // Principle 3
 
-// code example for New Binding
-// let Animals = function(type, weight, name) {
-//   this.type = type;
-//   this.weight = weight;
-//   this.name = name;
-// };
+//code example for New Binding
+let Animals = function(type, weight, name) {
+  this.type = type;
+  this.weight = weight;
+  this.name = name;
+};
 
 // let liger = new Animals("lion/tiger hybrid", 200, "Leo");
 // Principle 4
